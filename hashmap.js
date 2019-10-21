@@ -58,7 +58,6 @@ class HashMap {
     _resize(size) {
         const oldSlots = this._hashTable;
         this._capacity = size;
-        // Reset the length - it will get rebuilt as you add the items back
         this.length = 0;
         this._deleted = 0;
         this._hashTable = [];
